@@ -1,37 +1,40 @@
 Content:
 1.About us
 2.How to register or log in(sections 1 and 2)
-3.How can you add an aircraft/hub(sections 1 and 2)
-4.How can you update an aircraft/hub(sections 1 and 2)
-5.How can you delete an aircraft/hub(sections 1 and 2)
-6.Find more about us
-7.Contact us
-8.Technologies used
+3.How can you see all aircrafts/hubs
+4.How can you add an aircraft/hub(sections 1 and 2)
+5.How can you update an aircraft/hub(sections 1 and 2)
+6.How can you delete an aircraft/hub
+7.Find more about us
+8.Contact us
+9.Technologies used
 
 
 1.FlightStats is a free app.
-You can create an account and use it or you can just use it without an account.
-FlightStats is a hub and aircraft tracking application. You can use our app accessing our website from desktop ot from your smartphone.
-FlightStats will help you to manage aircrafts and hubs that you manage,allowing you to add,update or delete hubs and aircrafts.
+FlightStats is a hub and aircraft tracking application. You can use our app accessing our website from desktop or using your smartphone.
+FlightStats will help you to manage aircrafts and hubs that you have to, allowing you to add,update or delete hubs and aircrafts.
+You can choose to create an account and use it or you can use it without an account.
 
-2.In order to register or login you have to navigate to corresponding page('http://localhost:8000/login' or 'http://localhost:8000/register').
-2.1.If you want to register(we recommand it),you will be redirected to a page where to have to add your name,email address and your password(as well as password confirmation).You cannot use your email address twice.
-2.2.If you want to login,you will be redirected to a page where to have to add your name and your email address.If you do not have an account,you can create one using steps from 2.1. Once you are logged in,you will be able to log out whenever you want.
+2.In order to register or login you have to navigate to the corresponding page('http://localhost:8000/register' or 'http://localhost:8000/login').
+2.1.If you want to register(we recommand it),you will be redirected to a page where you have to introduce your name,email address and your password(as well as password confirmation).You cannot use your email address twice.
+2.2.If you want to login,you will be redirected to a page where you have to introduce your name and your email address.If you do not have an account,you can create one using steps from 2.1. Once you are logged in,you will be able to log out whenever you want.
 
-3.In order to add an entity(aircraft or hub) you have to navigate to corresponding page('http://localhost:8000/hubs' or 'http://localhost:8000/aircrafts') and press the green button with the text 'Add'.
-3.1.If you want to add an aircrat,you will be redirected to a page where you have to add the name and the hub_id of the aircraft.The hub_id must exists in the hubs table and the name must be unique.At the end you have to press the blue button with the text 'Submit'
-3.2.If you want to add an hub,you will be redirected to a page where you have to add the name, the code,the reputation and the price of the hub.The name must be unique,the code must be unique and contain exactly 3 letters,the reputation must be in interval [0,100] and the price must be in interval [0,100000].At the end you have to press the blue button with the text 'Submit'
+3.In order to see all entities(aircrafts or hubs) you have to navigate to the corresponding page('http://localhost:8000/aircrafts' or 'http://localhost:8000/hubs').
 
-4.In order to update an entity(aircraft or hub) you have to navigate to corresponding page('http://localhost:8000/hubs' or 'http://localhost:8000/aircrafts') and press the blue button with the text 'Edit'.
-4.1.If you want to add an aircrat,you will be redirected to a page where you have to edit the name and the hub_id of the selected aircraft.The hub_id must exists in the hubs table and the name must be unique.At the end you have to press the blue button with the text 'Update'
-4.2.If you want to add an hub,you will be redirected to a page where you have to add the name, the code,the reputation and the price of the selected hub.The name must be unique,the code must be unique and contain exactly 3 letters,the reputation must be in interval [0,100] and the price must be in interval [0,100000].At the end you have to press the blue button with the text 'Update'
+4.In order to add an entity(aircraft or hub) you have to navigate to the corresponding page('http://localhost:8000/aircrafts' or 'http://localhost:8000/hubs') and press the green button with the text 'Add' on it.
+4.1.If you want to add an aircrat,you will be redirected to a page where you have to introduce the name and the hub_id of the aircraft.The hub_id must exists in the hubs table and the name must be unique.At the end you have to press the blue button with the text 'Submit' on it.
+4.2.If you want to add an hub,you will be redirected to a page where you have to introduce the name, the code,the reputation and the price of the hub.The name must be unique,the code must be unique and contain exactly 3 letters,the reputation must belong to the interval [0,100] and the price must belong to the interval [0,100000].At the end you have to press the blue button with the text 'Submit' on it.
 
-5.In order to delete an entity(aircraft or hub) you have to navigate to corresponding page('http://localhost:8000/hubs' or 'http://localhost:8000/aircrafts') and press the red button with the text 'Delete'.The delete will be performed on-place. Pay attention:once you delete an element it won't be recovered anymore!Moreover,if you want to delete an hub,all its associated aircrafts will be deleted as well from the database!
+5.In order to update an entity(aircraft or hub) you have to navigate to the corresponding page('http://localhost:8000/aircrafts' or 'http://localhost:8000/hubs') and press the blue button with the text 'Edit' on it.
+5.1.If you want to add an aircrat,you will be redirected to a page where you have to edit the name and the hub_id of the selected aircraft.The new hub_id must exists in the hubs table and the new name must be unique.At the end you have to press the blue button with the text 'Update' on it.
+5.2.If you want to add an hub,you will be redirected to a page where you have to edit the name, the code,the reputation and the price of the selected hub.The (new) name must be unique,the (new) code must be unique and contain exactly 3 letters,the (new) reputation must belong to the interval [0,100] and the (new) price must belong to the interval [0,100000].At the end you have to press the blue button with the text 'Update' on it.
 
-6.If you want to found more about our app and its founder,please visit this link:http://localhost:8000/about.
+6.In order to delete an entity(aircraft or hub) you have to navigate to the corresponding page('http://localhost:8000/aircrafts' or 'http://localhost:8000/hubs') and press the red button with the text 'Delete' on it.The delete will be performed on-place. Pay attention:once you delete an element it will be deleted forever (you will cannot recover it)!Moreover,if the deleted element is an hub,all its associated aircrafts will be deleted as well from the database!
 
-7.If you want to contact us,if you have a question or if you simply want to offer us a feedback,please feel free to contact us.You can find our contact details,as well as our headquarters' address visiting this link http://localhost:8000/contact.
+7.If you want to found more about our website and its founder,please visit the following link: http://localhost:8000/about.
 
-8.Our app ,FlightStats,is build with the help of PHP and its best framework,Laravel for back-end and with the of HTML/CSS/JS for the front-end.
+8.If you want to contact us,if you have a question or if you simply want to offer us a feedback,please feel free to contact us.You can find our contact details,as well as our headquarter's address if visit the following link: http://localhost:8000/contact.
+
+9.Our app, FlightStats, is build with the help of PHP and Laravel framework for the back-end part and with the help of HTML/CSS/JS/Bootstrap for the front-end part.
 
   
