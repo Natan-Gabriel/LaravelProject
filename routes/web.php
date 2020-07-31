@@ -29,6 +29,7 @@ Route::get('/about', function () {
 
 Route::resource('/hubs', 'HubController');
 Route::delete('/hubs/delete/{id}', 'HubController@destroy');
+Route::post('/hubs/store', 'HubController@store');
 //Route::patch('/hubs/{id}/edit', 'HubController@edit');
 
 Route::get('/hubs', function () {
@@ -41,6 +42,7 @@ Route::get('/hubs', function () {
 
 Route::resource('/aircrafts', 'AircraftController');
 Route::delete('/aircrafts/delete/{id}', 'AircraftController@destroy');
+Route::post('/aircrafts/store', 'AircraftController@store');
 //Route::patch('/aircrafts/{id}/edit', 'AircraftController@edit');
 
 Route::get('/aircrafts', function () {
