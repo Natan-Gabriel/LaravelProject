@@ -23,6 +23,6 @@
         "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
-        "nodemailer": "^6.4.10"
+        "nodemailer": "^6.4.16"
     }
 }
